@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+dev_basis02
 use App\Models\Post;
 use Illuminate\Http\Request;
+ master
 
 class PostController extends Controller
 {
@@ -14,3 +16,5 @@ class PostController extends Controller
     }
 }
 ?>
+
+
