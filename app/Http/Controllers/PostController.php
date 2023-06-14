@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-dev_basis02
 use App\Models\Post;
 use Illuminate\Http\Request;
- master
 
 class PostController extends Controller
 {
@@ -13,6 +11,11 @@ class PostController extends Controller
     {
         return view('posts/index')->with(['posts' => $post->getPaginateByLimit(1)]);
 
+    }
+    
+    public function show(Post $post)
+    {
+        return view('posts/show')->with(['post' => $post]);
     }
 }
 ?>
